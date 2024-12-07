@@ -51,7 +51,7 @@ errata_report_shim neoverse_hermes
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.neoverse_hermes_regs, "aS"
+.section .rodata.neoverse_hermes_regs, "aS", %progbits, 1
 neoverse_hermes_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 

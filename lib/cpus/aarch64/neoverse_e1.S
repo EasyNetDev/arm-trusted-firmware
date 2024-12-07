@@ -44,7 +44,7 @@ endfunc neoverse_e1_cpu_pwr_dwn
 
 errata_report_shim neoverse_e1
 
-.section .rodata.neoverse_e1_regs, "aS"
+.section .rodata.neoverse_e1_regs, "aS", %progbits, 1
 neoverse_e1_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 

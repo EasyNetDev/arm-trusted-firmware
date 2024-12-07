@@ -66,7 +66,7 @@ func cortex_a65_errata_report
 endfunc cortex_a65_errata_report
 #endif
 
-.section .rodata.cortex_a65_regs, "aS"
+.section .rodata.cortex_a65_regs, "aS", %progbits, 1
 cortex_a65_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 

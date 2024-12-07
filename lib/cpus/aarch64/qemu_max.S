@@ -58,7 +58,7 @@ errata_report_shim qemu_max
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.qemu_max_regs, "aS"
+.section .rodata.qemu_max_regs, "aS", %progbits, 1
 qemu_max_regs:  /* The ascii list of register names to be reported */
 	.asciz	"" /* no registers to report */
 

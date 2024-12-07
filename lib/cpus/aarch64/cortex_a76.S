@@ -522,7 +522,7 @@ errata_report_shim cortex_a76
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.cortex_a76_regs, "aS"
+.section .rodata.cortex_a76_regs, "aS", %progbits, 1
 cortex_a76_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 

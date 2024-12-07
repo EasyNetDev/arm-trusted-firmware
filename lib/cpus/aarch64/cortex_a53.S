@@ -210,7 +210,7 @@ errata_report_shim cortex_a53
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.cortex_a53_regs, "aS"
+.section .rodata.cortex_a53_regs, "aS", %progbits, 1
 cortex_a53_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", "cpumerrsr_el1", "l2merrsr_el1", \
 		"cpuactlr_el1", ""

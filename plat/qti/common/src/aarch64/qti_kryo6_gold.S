@@ -60,7 +60,7 @@ endfunc qti_kryo6_gold_errata_report
  * reported.
  * ---------------------------------------------
  */
-.section .rodata.qti_kryo4_gold_regs, "aS"
+.section .rodata.qti_kryo4_gold_regs, "aS", %progbits, 1
 qti_kryo6_gold_regs:  /* The ASCII list of register names to be reported */
 	.asciz	""
 

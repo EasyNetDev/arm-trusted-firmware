@@ -51,7 +51,7 @@ errata_report_shim cortex_chaberton
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.cortex_chaberton_regs, "aS"
+.section .rodata.cortex_chaberton_regs, "aS", %progbits, 1
 cortex_chaberton_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 

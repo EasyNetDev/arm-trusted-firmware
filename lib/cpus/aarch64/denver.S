@@ -307,7 +307,7 @@ errata_report_shim denver
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.denver_regs, "aS"
+.section .rodata.denver_regs, "aS", %progbits, 1
 denver_regs:  /* The ascii list of register names to be reported */
 	.asciz	"actlr_el1", ""
 

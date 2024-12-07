@@ -91,7 +91,7 @@ errata_report_shim rainier
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.rainier_regs, "aS"
+.section .rodata.rainier_regs, "aS", %progbits, 1
 rainier_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 

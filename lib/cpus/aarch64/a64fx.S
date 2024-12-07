@@ -34,7 +34,7 @@ endfunc a64fx_errata_report
          * reported.
          * ---------------------------------------------
          */
-.section .rodata.a64fx_regs, "aS"
+.section .rodata.a64fx_regs, "aS", %progbits, 1
 a64fx_regs:  /* The ascii list of register names to be reported */
         .asciz  ""
 

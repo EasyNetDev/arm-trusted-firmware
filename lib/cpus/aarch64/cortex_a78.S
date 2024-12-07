@@ -209,7 +209,7 @@ errata_report_shim cortex_a78
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.cortex_a78_regs, "aS"
+.section .rodata.cortex_a78_regs, "aS", %progbits, 1
 cortex_a78_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 

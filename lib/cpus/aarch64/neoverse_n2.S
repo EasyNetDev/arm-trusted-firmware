@@ -293,7 +293,7 @@ errata_report_shim neoverse_n2
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.neoverse_n2_regs, "aS"
+.section .rodata.neoverse_n2_regs, "aS", %progbits, 1
 neoverse_n2_regs:  /* The ASCII list of register names to be reported */
 	.asciz	"cpupwrctlr_el1", ""
 

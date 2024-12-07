@@ -92,7 +92,7 @@ endfunc aem_generic_errata_report
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.aem_generic_regs, "aS"
+.section .rodata.aem_generic_regs, "aS", %progbits, 1
 aem_generic_regs:  /* The ascii list of register names to be reported */
 	.asciz	"" /* no registers to report */
 

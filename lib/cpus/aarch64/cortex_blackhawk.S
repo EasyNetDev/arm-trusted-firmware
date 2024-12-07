@@ -51,7 +51,7 @@ errata_report_shim cortex_blackhawk
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.cortex_blackhawk_regs, "aS"
+.section .rodata.cortex_blackhawk_regs, "aS", %progbits, 1
 cortex_blackhawk_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 

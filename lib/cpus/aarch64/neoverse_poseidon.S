@@ -71,7 +71,7 @@ errata_report_shim neoverse_poseidon
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.neoverse_poseidon_regs, "aS"
+.section .rodata.neoverse_poseidon_regs, "aS", %progbits, 1
 neoverse_poseidon_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 

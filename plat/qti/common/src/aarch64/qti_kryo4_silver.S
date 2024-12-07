@@ -55,7 +55,7 @@ endfunc qti_kryo4_silver_errata_report
  * reported.
  * ---------------------------------------------
  */
-.section .rodata.qti_kryo4_silver_regs, "aS"
+.section .rodata.qti_kryo4_silver_regs, "aS", %progbits, 1
 qti_kryo4_silver_regs:  /* The ASCII list of register names to be reported */
 	.asciz	""
 

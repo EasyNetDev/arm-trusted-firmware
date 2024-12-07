@@ -56,7 +56,7 @@ endfunc travis_core_pwr_dwn
 
 errata_report_shim travis
 
-.section .rodata.travis_regs, "aS"
+.section .rodata.travis_regs, "aS", %progbits, 1
 travis_regs: /* The ASCII list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 

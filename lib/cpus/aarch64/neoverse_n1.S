@@ -287,7 +287,7 @@ endfunc neoverse_n1_errata_ic_trap_handler
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.neoverse_n1_regs, "aS"
+.section .rodata.neoverse_n1_regs, "aS", %progbits, 1
 neoverse_n1_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 

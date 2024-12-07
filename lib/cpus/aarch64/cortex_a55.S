@@ -137,7 +137,7 @@ endfunc cortex_a55_core_pwr_dwn
 	 * reported.
 	 * ---------------------------------------------
 	 */
-.section .rodata.cortex_a55_regs, "aS"
+.section .rodata.cortex_a55_regs, "aS", %progbits, 1
 cortex_a55_regs:  /* The ascii list of register names to be reported */
 	.asciz	"cpuectlr_el1", ""
 
